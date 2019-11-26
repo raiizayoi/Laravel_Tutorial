@@ -1,6 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('title', 'Home')
+@section('nav_store', 'active');
 
 @section('content')
     <section class="page-section cta">

@@ -1,6 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('title', 'Home')
+@section('nav_about', 'active');
 
 @section('content')
 

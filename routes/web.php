@@ -11,21 +11,10 @@
 |
 */
 
-    Route::get('/', function () {
-        return view('frontend.index');
-    })->name('home');
-
-    Route::get('about', function () {
-        return view('frontend.about');
-    })->name('about');
-    
-    Route::get('products', function () {
-        return view('frontend.products');
-    })->name('products');
-
-    Route::get('store', function () {
-        return view('frontend.store');
-    })->name('store');
+    Route::get('/', 'Frontend\HomeController@index')->name('home');
+    Route::get('about', 'Frontend\AboutController@index')->name('about');
+    Route::get('products', 'Frontend\ProductController@index')->name('products');
+    Route::get('store', 'Frontend\StoreController@index')->name('store');
 
     // 登入頁面
     Route::get('/admin/login', function (){
